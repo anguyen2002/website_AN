@@ -1,0 +1,185 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;      /* full screen */
+  display: flex;
+  align-items: center;
+  padding: 0 150px;
+  box-sizing: border-box;
+  margin-top: -50px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;  /* header left, selfie right */
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  gap: 40px;
+}
+
+.header {
+  position: relative;       /* remove absolute */
+  max-width: 800px;         /* optional, keep header width reasonable */
+}
+
+.bagel-fat-one-regular {
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.name {
+    color: rgb(243, 243, 216);
+    font-size: 2.5em;
+    font-family: "Bagel Fat One";
+    text-shadow: -4px 8px 0 rgba(36, 30, 30, 0.158);
+
+}
+
+.strawberry {
+    color: rgb(122, 118, 78);
+    font-size: 2.5em;
+    font-family: "Bagel Fat One";
+    // text-shadow: -4px 6px 0 rgba(36, 30, 30, 0.158);
+    margin-top: -35px;
+}
+
+.aboutme {
+    max-width: 620px;
+    font-size: 1.5em;
+    font-family: 'Bagel Fat One';
+    color: rgb(243, 243, 216);
+}
+
+.aboutme p {
+    padding-bottom: 24px;
+    border-bottom: 5px solid rgb(243, 243, 216);
+}
+
+.selfie {
+  position: relative;       /* remove absolute */
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 10px beige solid;
+  background-image: url('/assets/grad.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* vertical spacing */
+    padding: 0;
+    margin: 32px 0 0 0; /* top margin */
+    align-items: flex-start; /* ensures items start from the left */
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(243, 243, 216);
+    font-family: 'Bagel Fat One';
+    font-size: 2em;
+    text-transform: uppercase;
+    position: relative;
+    display: block; /* make links take full width of container */
+    width: max-content; /* shrink to text width, but align left */
+}
+
+.menu ul li a::after {
+    content: '';
+    height: 5px;
+    width: 0%;
+    left: 0;
+    bottom: -4px; /* slightly below text */
+    background: rgb(243, 243, 216);
+    position: absolute;
+    transition: width 0.5s ease;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+}
+
+.flower {
+    width: 100px;
+    /* adjust size */
+    height: 100px;
+    background-image: url('/assets/Flower.png');
+    /* relative to src/ */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(-4px 8px 0px rgba(36, 30, 30, 0.158));
+    animation: spin 8s linear infinite;
+}
+
+/* Define the animation sequence */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        /* Start at 0 degrees */
+    }
+
+    100% {
+        transform: rotate(360deg);
+        /* End at 360 degrees (one full rotation) */
+    }
+}
+
+.title_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between name and flower */
+}
+
+.highlight {
+    display: inline-block;
+    background-color: none;
+    color: rgb(122, 118, 78);
+    animation: float 5s ease-in-out infinite;
+    animation-delay: var(--delay);
+}
+
+.contact-section {
+  padding: 0px 0px;
+}
+
+.contact-container {
+  max-width: 600px;        /* width of your contact content */
+  margin-left: 1400px;      /* match hero left padding */
+  margin-right: auto;      /* keep right spacing flexible */
+  margin-top: -200px;
+}
+
+@keyframes float {
+
+    0%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    90% {
+        transform: translateY(-10px);
+        /* up */
+    }
+}
+@media only screen and (max-width: 975px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .selfie {
+    width: 300px;
+    height: 300px;
+  }
+}

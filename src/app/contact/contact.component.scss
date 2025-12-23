@@ -1,0 +1,32 @@
+.contact-section {
+  padding: 80px 20px;
+  text-align: center;
+  
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.contact-items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: rgb(93, 90, 56);
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-2px);
+}
+

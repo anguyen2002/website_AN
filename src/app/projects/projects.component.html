@@ -1,0 +1,15 @@
+<button class="back-button" (click)="goHome()">
+  <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15 18L9 12L15 6" stroke="#f3f3d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <span></span>
+</button>
+<div class="cards-container">
+    <div class="card" *ngFor="let p of projects">
+        <h3>{{p.title}}</h3>
+        <img [src]="p.imgURL">
+        <p>{{p.description}}</p>
+        <a [href]="p.link">{{p.link}}</a>
+        <p>Tech Stack: {{p.techStack}}</p>
+    </div>
+</div>
