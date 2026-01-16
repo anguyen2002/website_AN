@@ -28,10 +28,9 @@
   margin-top: 100px;
 }
 
-/* Card style */
 .card {
-  background-color: rgb(91, 88, 56); /* dark, modern background */
-  color: #f3f3d8; /* text color */
+  background-color: rgb(91, 88, 56); 
+  color: #f3f3d8;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   padding: 20px;
@@ -45,28 +44,32 @@
   text-align: left;
 }
 
-/* Hover effect */
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Card heading */
 .card h3 {
   font-size: 2rem;
   margin-bottom: 12px;
-  font-family: 'Bagel Fat One', system-ui; /* match your theme */
+  font-family: 'Bagel Fat One', system-ui; 
   text-shadow: -2px 4px 0 rgba(36, 30, 30, 0.2);
 }
 
-/* Card description */
 .card p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   color: #e0e0c6;
+  font-family: 'Courier New', Courier, monospace;
+}
+.card a {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #e0e0c6;
+  font-family: 'Courier New', Courier, monospace;
+
 }
 
-/* Optional: small subtle animation on load */
 .card {
   opacity: 0;
   transform: translateY(20px);

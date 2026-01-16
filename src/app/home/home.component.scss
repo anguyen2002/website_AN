@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  min-height: 100vh;      /* full screen */
+  min-height: 100vh;   
   display: flex;
   align-items: center;
   padding: 0 150px;
@@ -10,7 +10,7 @@
 
 .hero-content {
   display: flex;
-  justify-content: space-between;  /* header left, selfie right */
+  justify-content: space-between; 
   align-items: center;
   width: 100%;
   max-width: 1600px;
@@ -18,8 +18,8 @@
 }
 
 .header {
-  position: relative;       /* remove absolute */
-  max-width: 800px;         /* optional, keep header width reasonable */
+  position: relative;     
+  max-width: 800px;         
 }
 
 .bagel-fat-one-regular {
@@ -57,12 +57,12 @@
 }
 
 .selfie {
-  position: relative;       /* remove absolute */
+  position: relative;
   width: 500px;
   height: 500px;
   border-radius: 50%;
   border: 10px beige solid;
-  background-image: url('/assets/grad.jpg');
+  background-image: url("/assets/grad.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -71,10 +71,10 @@
 .menu ul {
     display: flex;
     flex-direction: column;
-    gap: 16px; /* vertical spacing */
+    gap: 16px; 
     padding: 0;
-    margin: 32px 0 0 0; /* top margin */
-    align-items: flex-start; /* ensures items start from the left */
+    margin: 32px 0 0 0; 
+    align-items: flex-start; 
 }
 
 .menu ul li {
@@ -88,8 +88,8 @@
     font-size: 2em;
     text-transform: uppercase;
     position: relative;
-    display: block; /* make links take full width of container */
-    width: max-content; /* shrink to text width, but align left */
+    display: block; 
+    width: max-content;
 }
 
 .menu ul li a::after {
@@ -97,7 +97,7 @@
     height: 5px;
     width: 0%;
     left: 0;
-    bottom: -4px; /* slightly below text */
+    bottom: -4px;
     background: rgb(243, 243, 216);
     position: absolute;
     transition: width 0.5s ease;
@@ -109,10 +109,8 @@
 
 .flower {
     width: 100px;
-    /* adjust size */
     height: 100px;
-    background-image: url('/assets/Flower.png');
-    /* relative to src/ */
+    background-image: url("/assets/Flower.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -120,23 +118,20 @@
     animation: spin 8s linear infinite;
 }
 
-/* Define the animation sequence */
 @keyframes spin {
     0% {
         transform: rotate(0deg);
-        /* Start at 0 degrees */
     }
 
     100% {
         transform: rotate(360deg);
-        /* End at 360 degrees (one full rotation) */
     }
 }
 
 .title_wrapper {
     display: flex;
     align-items: center;
-    gap: 20px; /* space between name and flower */
+    gap: 20px; 
 }
 
 .highlight {
@@ -152,9 +147,9 @@
 }
 
 .contact-container {
-  max-width: 600px;        /* width of your contact content */
-  margin-left: 1400px;      /* match hero left padding */
-  margin-right: auto;      /* keep right spacing flexible */
+  max-width: 600px; 
+  margin-left: 1350px;
+  margin-right: auto; 
   margin-top: -200px;
 }
 
@@ -168,7 +163,6 @@
 
     90% {
         transform: translateY(-10px);
-        /* up */
     }
 }
 @media only screen and (max-width: 975px) {
